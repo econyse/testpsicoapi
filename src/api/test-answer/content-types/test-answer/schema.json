@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_answers",
+  "info": {
+    "singularName": "test-answer",
+    "pluralName": "test-answers",
+    "displayName": "Test-answer"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "answers": {
+      "type": "json"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "carrera": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

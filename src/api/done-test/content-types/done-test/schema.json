@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "done_tests",
+  "info": {
+    "singularName": "done-test",
+    "pluralName": "done-tests",
+    "displayName": "Done-test"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Test": {
+      "type": "string",
+      "required": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "done_tests"
+    }
+  }
+}

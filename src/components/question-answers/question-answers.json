@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_question_answers_question_answers",
+  "info": {
+    "displayName": "questionAnswers"
+  },
+  "options": {},
+  "attributes": {
+    "answerText": {
+      "type": "text"
+    },
+    "hiddenValue": {
+      "type": "string"
+    }
+  }
+}
